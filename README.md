@@ -1,20 +1,21 @@
 # Find Hidden Apps on Android
 
-This Python script helps detect hidden Android apps that are **not visible in the launcher**, often used for supervision or background activities.
+This Python script helps detect hidden Android apps that are **not visible in the launcher**, which are often used for parental supervision, background services, or system-level operations.
 
-## 📂 Features
+---
 
-- Lists apps hidden from the launcher
-- Outputs app package names
-- Can be used for basic Android forensic checks
+## 📦 Requirements
 
-## 🧪 How to Use
+### 🖥️ System Requirements
+- **Python 3.x**
+- **ADB (Android Debug Bridge)**  
+  Download: [Android Platform Tools](https://developer.android.com/studio/releases/platform-tools)  
+  Make sure `adb` is added to your system PATH
 
-1. Connect your Android device with USB Debugging enabled.
-2. Ensure `adb` is installed and working.
-3. Run the script:
+### 📚 Python Dependencies
+Install required packages with:
 
 ```bash
-python find_hidden_apps.py
+pip install -r requirements.txt
 
-Note: Requires adb to be in your system PATH.
+Note: Requires adb to be in your system PATH. 
